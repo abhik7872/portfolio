@@ -20,6 +20,11 @@
     margin: 200px;
 }
 
+.aboutme button {
+    font-size: 44px;
+    font-weight: bold;
+}
+
 .text-box {
     color: #fff;
     position: absolute;
@@ -46,9 +51,12 @@ nav {
     justify-content: left;
     align-items: center;
     height: 8vh;
-    background-color: rgb(26, 25, 25);
+    background-color: transparent;
     font-family: 'Courier New', Courier, monospace;
-    z-index: 100000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 20;
 }
 
 .logo {
@@ -109,7 +117,7 @@ nav {
         left: 0px;
         height: 94vh;
         top: 6vh;
-        background-color: rgb(26, 25, 25);
+        background-color: rgb(75, 72, 72);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -134,6 +142,15 @@ nav {
         font-size: 100px;
         line-height: 70px;
         margin-left: -10px;
+    }
+    .aboutme button {
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .buttons {
+        border-radius: none;
+        position: relative;
+        display: inline;
     }
 }
 
@@ -166,7 +183,6 @@ nav {
 
 .buttons {
     font-family: calibri;
-    font-size: 44px;
     margin-right: 18px;
     padding: 30px;
     background: transparent;
