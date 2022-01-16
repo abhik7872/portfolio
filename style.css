@@ -13,6 +13,13 @@
     justify-content: center;
 }
 
+.aboutme {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin: 200px;
+}
+
 .text-box {
     color: #fff;
     position: absolute;
@@ -41,6 +48,7 @@ nav {
     height: 8vh;
     background-color: rgb(26, 25, 25);
     font-family: 'Courier New', Courier, monospace;
+    z-index: 100000;
 }
 
 .logo {
@@ -154,4 +162,25 @@ nav {
 
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.buttons {
+    font-family: calibri;
+    font-size: 20px;
+    margin-right: 18px;
+    padding: 30px;
+    background: transparent;
+    color: #fff;
+    border-radius: 40px;
+}
+
+.buttons:hover {
+    background: linear-gradient(180deg, #DCDCEE, #FEFEFF);
+    cursor: pointer;
+    color: rgb(41, 40, 40);
+}
+
+.buttons:focus{
+    background: linear-gradient(180deg, #667799, #7799CC);
+    color: royalblue;
 }
