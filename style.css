@@ -166,21 +166,40 @@ nav {
 
 .buttons {
     font-family: calibri;
-    font-size: 20px;
+    font-size: 44px;
     margin-right: 18px;
     padding: 30px;
     background: transparent;
     color: #fff;
-    border-radius: 40px;
+    border-radius: 80px;
+    outline: none;
+    position: relative;
+    border: 3px solid #DCDCEE;
+    z-index: 1;
 }
 
 .buttons:hover {
-    background: linear-gradient(180deg, #DCDCEE, #FEFEFF);
     cursor: pointer;
     color: rgb(41, 40, 40);
 }
 
-.buttons:focus{
-    background: linear-gradient(180deg, #667799, #7799CC);
-    color: royalblue;
+.buttons::before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    right: 50%;
+    bottom: 0%;
+    opacity: 0;
+    content: "";
+    border-radius: 80px;
+    background-color: #DCDCEE;
+}
+
+.buttons:hover::before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
 }
