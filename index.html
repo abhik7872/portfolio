@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +10,6 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="text-box">
-            <p>I am</p>
-            <h1>ABHIK</h1>
-            <h3>I am currently persuating my B. Tech degree</h3>
-            <button type="button" class="buttons">Download CV &#10230</button>
-        </div>
         <nav>
             <div class="burger">
                 <div class="line1"></div>
@@ -39,10 +34,21 @@
                 </li>
             </ul>
         </nav>
-        <div class="aboutme">
+        <div class="text-box">
+            <p>I am</p>
+            <h1>ABHIK</h1>
+            <h3>I am currently persuating my B. Tech degree</h3>
+            <button type="button" class="buttons">Download CV &#10230</button>
+        </div>
+        <div class="aboutme" data-aos="fade-left" data-aos-duration="1000" data-aos-once="false">
+            <h3>I am from Bardhaman, a town in West Bengal</h3>
             <button type="button" class="buttons">Click Here To Know More &#10230</button>
         </div>
     </div>
     <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
