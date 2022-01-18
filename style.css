@@ -20,7 +20,7 @@ body {
     margin: 800px;
     margin-right: 10%;
     position: relative;
-    bottom: 100px;
+    margin-bottom: 400px;
 }
 
 .aboutme h3 {
@@ -42,7 +42,8 @@ body {
     justify-content: center;
     margin: 200px;
     margin-left: 80px;
-    left: 100px
+    left: 100px;
+    top: 100px;
 }
 
 .text-box p {
