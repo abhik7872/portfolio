@@ -1,9 +1,14 @@
 import React from 'react'
-import './nav'
+import './nav.css'
 
 function nav() {
   return (
-    <div>nav</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
   )
 }
 
